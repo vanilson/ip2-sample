@@ -1,6 +1,6 @@
 package br.ufrpe.poo.repositorio;
 
-import br.ufrpe.poo.beans.*;
+import br.ufrpe.poo.beans.Conta;
 
 public class RepositorioConta {
 
