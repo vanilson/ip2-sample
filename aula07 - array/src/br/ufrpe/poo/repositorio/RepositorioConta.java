@@ -8,7 +8,6 @@ public class RepositorioConta {
 	private Conta[] contas;
 
 	public RepositorioConta(int tam) {
-		Cliente cli;
 		this.contas = new Conta[tam];
 		this.proxima = 0;
 
