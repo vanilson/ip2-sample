@@ -10,7 +10,6 @@ public class RepositorioConta {
 	public RepositorioConta(int tam) {
 		this.contas = new Conta[tam];
 		this.proxima = 0;
-
 	}
 
 	public Conta[] getContas() {
