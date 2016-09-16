@@ -1,17 +1,18 @@
 
 public class Conta {
 
-	// ATRIBUTOS
+	// Atributos
 	private String numero;
 	public double saldo;
 	private String ano;
 
-	// CONSTRUTOR
+	// Construtor 
 	public Conta(String numero, double saldo) {
 		this.numero = numero;
 		this.saldo = saldo;
 	}
 
+	// Construtor padrão
 	public Conta() {
 
 	}
