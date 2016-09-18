@@ -8,7 +8,6 @@ public class Professor extends Pessoa {
 		super(); // chamada ao construtor default da superclasse (Pessoa)
 	}
 	
-
 	public Professor(String cpf, String nome, String email, double salario, int nivel) {
 		super(cpf, nome, email);  // chamada ao construtor da super classe
 		
