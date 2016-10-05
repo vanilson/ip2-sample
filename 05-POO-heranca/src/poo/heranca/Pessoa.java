@@ -1,15 +1,15 @@
 package poo.heranca;
 
 public class Pessoa {
-	private String cpf;
+	
+	protected String cpf; // exemplo de modificador de acesso protected (sub-classes podem acessar diretamente tb)
 	private String nome;
 	private String email;
 	
-	// Construtor default
 	public Pessoa() {
-	
-	}
 		
+	}
+	
 	// Construtor que recebe atributos
 	public Pessoa(String cpf, String nome, String email) {
 		super();
