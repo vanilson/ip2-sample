@@ -21,10 +21,10 @@ public class RepositorioContasArray implements IRepositorioContas, Serializable 
     private static RepositorioContasArray instance;
 
     /**
-     * Construtor público
+     * Construtor pï¿½blico
      * 
      * @param tamanho
-     *            Tamanho inicial do array de contas a ser construído
+     *            Tamanho inicial do array de contas a ser construï¿½do
      */
     private RepositorioContasArray(int tamanho) {
         this.contas = new Conta[tamanho];
@@ -40,7 +40,7 @@ public class RepositorioContasArray implements IRepositorioContas, Serializable 
 
     private static RepositorioContasArray lerDoArquivo() {
         RepositorioContasArray instanciaLocal = null;
-
+        
         File in = new File("contas.dat");
         FileInputStream fis = null;
         ObjectInputStream ois = null;
@@ -158,12 +158,12 @@ public class RepositorioContasArray implements IRepositorioContas, Serializable 
     }
 
     /**
-     * Método auxiliar para procurar o índice de uma conta no array.
+     * Mï¿½todo auxiliar para procurar o ï¿½ndice de uma conta no array.
      * 
      * @param num
-     *            Número da conta da qual deseja-se encontrar o índice no array
+     *            Nï¿½mero da conta da qual deseja-se encontrar o ï¿½ndice no array
      *            de contas
-     * @return Um inteiro correspondente ao índice da conta encontrada.
+     * @return Um inteiro correspondente ao ï¿½ndice da conta encontrada.
      */
     private int procurarIndice(String num) {
         int i = 0;

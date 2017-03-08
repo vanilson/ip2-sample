@@ -9,39 +9,39 @@ public interface IRepositorioContas {
      * Cadastra uma nova conta no array de contas.
      * 
      * @param c
-     *            A referência da conta a ser cadastrada
+     *            A referencia da conta a ser cadastrada
      */
     void cadastrar(Conta c);
 
     /**
-     * Cria o objeto da conta com o número e saldo inicial passados como
-     * parâmetro e cadastra a conta no array de contas. Observe o reuso entre os
-     * métodos sobrecarregados "cadastrar"
+     * Cria o objeto da conta com o numero e saldo inicial passados como
+     * parametro e cadastra a conta no array de contas. Observe o reuso entre os
+     * metodos sobrecarregados "cadastrar"
      * 
      * @param numero
-     *            Número da conta a ser criada e cadastrada
+     *            NÃºmero da conta a ser criada e cadastrada
      * @param saldoInicial
      *            Saldo inicial da conta a ser criada e cadastrada
      */
     void cadastrar(String numero, double saldoInicial);
 
     /**
-     * Procurar uma conta baseado no número dado como parâmetro
+     * Procurar uma conta baseado no numero dado como parï¿½metro
      * 
      * @param num
-     *            O número da conta a ser procurada
-     * @return A conta encontrada ou null se o número de conta passado com
-     *         parâmetro não existir
+     *            O nï¿½mero da conta a ser procurada
+     * @return A conta encontrada ou null se o nï¿½mero de conta passado com
+     *         parï¿½metro nï¿½o existir
      */
     Conta procurar(String num);
 
     boolean existe(String numConta);
 
     /**
-     * Removendo a conta cujo número é passado como parâmetro
+     * Removendo a conta cujo nï¿½mero ï¿½ passado como parï¿½metro
      * 
      * @param num
-     *            Número da conta a ser removida.
+     *            Nï¿½mero da conta a ser removida.
      * @throws ContaNaoExisteException 
      */
     void remover(String num) throws ContaNaoExisteException;
@@ -49,7 +49,7 @@ public interface IRepositorioContas {
     void renderJuros(String num);
 
     /**
-     * Método que procura por contas cujo saldo é maior do que 1000 e retorna em
+     * Mï¿½todo que procura por contas cujo saldo ï¿½ maior do que 1000 e retorna em
      * formato de Array
      * 
      * @return Array de Conta com saldo maior do que 1000
@@ -57,9 +57,9 @@ public interface IRepositorioContas {
     Conta[] retornaContasVIP();
     
     /**
-     * Método responsável por Salvar todo o repositório em um arquivo 
-     * específico, apagando o conteúdo salvo arteriormente no arquivo ou criando
-     * um novo arquivo se o mesmo não existir.
+     * Mï¿½todo responsï¿½vel por Salvar todo o repositï¿½rio em um arquivo 
+     * especï¿½fico, apagando o conteï¿½do salvo arteriormente no arquivo ou criando
+     * um novo arquivo se o mesmo nï¿½o existir.
      * 
      */
     void salvarArquivo();
