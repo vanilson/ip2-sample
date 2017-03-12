@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.embed.swing.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="579.0" prefWidth="746.0" 
+xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="br.com.banco.controller.ClienteController">
+    <children>
+        <Button id="btnSalvar" layoutX="11.0" layoutY="39.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+        <Label layoutX="14.0" layoutY="129.0" text="Nome:" />
+        <Label layoutX="14.0" layoutY="160.0" text="CPF:" />
+        <Label layoutX="14.0" layoutY="225.0" text="Data Nascimento:" />
+        <Label layoutX="15.0" layoutY="193.0" text="Telefone" />
+        <TextField fx:id="txtNome" layoutX="147.0" layoutY="124.0" prefHeight="25.0" prefWidth="275.0" />
+        <TextField fx:id="txtCPF" layoutX="147.0" layoutY="155.0" />
+        <TextField fx:id="txtTelefone" layoutX="147.0" layoutY="188.0" />
+        <TextField fx:id="txtDataNascimento" layoutX="147.0" layoutY="220.0" />
+        <TableView fx:id="tblClientes" layoutX="1.0" layoutY="268.0" onMouseClicked="#selecionarCliente" prefHeight="314.0" prefWidth="746.0">
+            <columns>
+                <TableColumn fx:id="clNome" prefWidth="372.0" text="Nome" />
+                <TableColumn fx:id="clCpf" prefWidth="123.0" text="CPF" />
+                <TableColumn fx:id="clTelefone" prefWidth="114.0" text="Telefone" />
+                <TableColumn fx:id="clDataNascimento" prefWidth="136.0" text="Data Nascimento" />
+            </columns>
+        </TableView>
+        <Button layoutX="80.0" layoutY="39.0" mnemonicParsing="false" onAction="#editar" text="Atualizar" />
+        <Button layoutX="165.0" layoutY="39.0" mnemonicParsing="false" onAction="#remover" text="Remover" />
+        <Button layoutX="251.0" layoutY="39.0" mnemonicParsing="false" onAction="#pesquisar" text="Pesquisar" />
+        <Button layoutX="351.0" layoutY="39.0" mnemonicParsing="false" onAction="#limparForm" text="Limpar" />
+      <AnchorPane layoutX="15.0" layoutY="78.0">
+         <children>
+              <Label fx:id="lblValidationError" contentDisplay="CENTER" prefHeight="29.0" prefWidth="707.0" textAlignment="RIGHT" textFill="#ee0c0c">
+                  <font>
+                      <Font size="16.0" />
+                  </font>
+              </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="422.0" layoutY="39.0" mnemonicParsing="false" text="Jhon" />
+      <Button layoutX="481.0" layoutY="39.0" mnemonicParsing="false" text="Formiga" />
+    </children>
+</AnchorPane>

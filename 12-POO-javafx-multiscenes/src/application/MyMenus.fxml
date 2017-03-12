@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.MenuBar?>
+
+<MenuBar 
+  xmlns="http://javafx.com/javafx/8.0.40"
+  xmlns:fx="http://javafx.com/fxml/1" 
+  fx:controller="application.MyMenusControl">
+  <menus>
+    <Menu 
+      mnemonicParsing="false" 
+      text="First Menu">
+      <items>
+        <MenuItem 
+          fx:id="displayOne" 
+          mnemonicParsing="false"
+          onAction="#switchToOne" 
+          text="Display Anchor Pane One" />
+      </items>
+    </Menu>
+    <Menu 
+      mnemonicParsing="false" 
+      text="Second Menu">
+      <items>
+        <MenuItem 
+          fx:id="displayTwo" 
+          mnemonicParsing="false"
+          onAction="#switchToTwo" 
+          text="Display Anchor Pane Two" />
+      </items>
+    </Menu>
+  </menus>
+</MenuBar>
