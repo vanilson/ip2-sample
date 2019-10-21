@@ -9,11 +9,10 @@ public class TelaMobile {
     }
 
     public void pintarTela() {
-        // Usando a instância da Fachada
-        String num = "1234-5"; // Número deve vir da tela
-        double saldo = 50.0; // Número deve vir da tela
+        // Usando a instï¿½ncia da Fachada
+        String num = "1234-5"; // Nï¿½mero deve vir da tela
+        double saldo = 50.0; // Nï¿½mero deve vir da tela
         Conta c = new Conta(num, saldo);
         ServidorBanco.getInstance().cadastrarConta(c);
     }
-    
 }

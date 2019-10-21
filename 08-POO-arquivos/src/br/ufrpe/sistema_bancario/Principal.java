@@ -8,5 +8,4 @@ public class Principal {
         TelaTextual tt = new TelaTextual();
         tt.executarOperacoes();
     }
-
 }

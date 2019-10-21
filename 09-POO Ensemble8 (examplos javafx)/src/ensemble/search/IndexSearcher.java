@@ -55,7 +55,7 @@ import org.apache.lucene.util.Version;
 /**
  * Class for searching the index
  */
-public class IndexSearcher {
+public class IndexSearcher  {
     private final static List<SearchGroup> searchGroups = new ArrayList<>();
     static {
         for (DocumentType dt: DocumentType.values()){
