@@ -23,9 +23,11 @@ public class BancoView extends Application {
     public void start(Stage palco) throws Exception {
         URL arquivoFXML = getClass().getResource("./bancoView.fxml");
         Parent fxmlParent = (Parent) FXMLLoader.load(arquivoFXML);
+        
         palco.setScene(new Scene(fxmlParent));
         palco.setTitle("Cadastro de Clientes");
         palco.setResizable(false);  
+        
         palco.show();
     }
 }

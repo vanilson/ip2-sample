@@ -56,7 +56,7 @@ public class ClienteController implements Initializable {
     public ClienteController() {
         clienteFacade = new ClienteFacadeImpl();
     }
-
+    
     /*@FXML
     public void salvar() {
         try {
@@ -73,6 +73,13 @@ public class ClienteController implements Initializable {
             Logger.getLogger(ClienteController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }*/
+    
+    @FXML
+    public void imprimirMensagem() {
+    	System.out.println("Imprimindo mensagem!!");
+    	lblValidationError.setText("Imprimindo nome do cliente: " + txtNome.getText());
+    	
+    }
     
     @FXML
     public void salvar() throws ParseException {
