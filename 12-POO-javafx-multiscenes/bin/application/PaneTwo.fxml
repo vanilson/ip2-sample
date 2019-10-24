@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane 
+  prefHeight="480.0" 
+  prefWidth="640.0"
+  xmlns:fx="http://javafx.com/fxml/1" 
+  xmlns="http://javafx.com/javafx/8.0.40">
+  <children>
+    <Sphere 
+      layoutX="306.0" 
+      layoutY="132.0" 
+      radius="20.0" />
+    <Sphere 
+      layoutX="260.0" 
+      layoutY="164.0" 
+      radius="20.0" />
+    <Sphere 
+      layoutX="346.0" 
+      layoutY="164.0" 
+      radius="20.0" />
+    <Sphere 
+      layoutX="346.0" 
+      layoutY="220.0" 
+      radius="20.0" />
+    <Sphere 
+      layoutX="306.0" 
+      layoutY="251.0" 
+      radius="20.0" />
+    <Sphere 
+      layoutX="256.0" 
+      layoutY="336.0" 
+      radius="20.0" />
+    <Sphere 
+      layoutX="302.0" 
+      layoutY="336.0" 
+      radius="20.0" />
+    <Sphere 
+      layoutX="356.0" 
+      layoutY="336.0" 
+      radius="20.0" />
+    <Sphere 
+      layoutX="276.0" 
+      layoutY="291.0" 
+      radius="20.0" />
+  </children>
+</AnchorPane>
