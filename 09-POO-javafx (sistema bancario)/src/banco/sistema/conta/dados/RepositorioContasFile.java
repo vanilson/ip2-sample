@@ -120,7 +120,7 @@ public class RepositorioContasFile implements IRepositorioContas, Serializable {
 	@Override
 	public void atualizar(Conta c) {
 		int posicaoContaExistente = this.contas.indexOf(this.consultar(c.getNumero()));
-		this.contas.set(posicaoContaExistente, c); // TODO Verificar a excecao de conta nao existente
+		this.contas.set(posicaoContaExistente, c); // TODO Levantar excecao de conta nao existente
 		this.salvarNoArquivo();
 	}
 

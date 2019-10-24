@@ -70,8 +70,8 @@
                   <ButtonBar layoutX="89.0" layoutY="231.0" prefHeight="25.0" prefWidth="175.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
                     <buttons>
                       <Button mnemonicParsing="false" text="Nova" />
-                        <Button mnemonicParsing="false" onAction="#handleEditarConta" text="Editar" />
-                        <Button mnemonicParsing="false" onAction="#deletarConta" text="Remover" />
+                        <Button mnemonicParsing="false" text="Editar" />
+                        <Button mnemonicParsing="false" text="Remover" />
                     </buttons>
                   </ButtonBar>
                </children>

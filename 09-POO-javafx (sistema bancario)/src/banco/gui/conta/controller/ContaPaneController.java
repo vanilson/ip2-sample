@@ -1,12 +1,9 @@
 package banco.gui.conta.controller;
 
-import java.util.List;
-
 import banco.gui.BancoApp;
 import banco.sistema.FachadaBanco;
 import banco.sistema.conta.Conta;
 import banco.sistema.conta.exceptions.ContaNaoExisteException;
-import javafx.application.Platform;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -83,35 +80,6 @@ public class ContaPaneController {
     }
     
     @FXML
-    private void deletarConta() {
-    	try {
-	        Conta contaSelecionada = tabelaContas.getSelectionModel().getSelectedItem();
-	        
-	        if(contaSelecionada != null) {
-	        	// TODO: chama a fachada para remover a conta
-	        	fachada.removerConta(contaSelecionada.getNumero());
-	        	
-	        	// remove da tabela
-	        	tabelaContas.getItems().remove(tabelaContas.getSelectionModel().getSelectedIndex());
-	        } else {
-	        	
-	            // Nothing selected.
-	            Alert alert = new Alert(AlertType.WARNING);
-	            alert.initOwner(bancoApp.getPrimaryStage());
-	            alert.setTitle("Sem sele��o");
-	            alert.setHeaderText("Nenhuma conta selecionada");
-	            alert.setContentText("Por favor, selecione uma conta na tabela");
-
-	            alert.showAndWait();
-	        }
-        	
-		} catch (ContaNaoExisteException e) {
-			// TODO: apresentar uma mensagem ao usuario
-			e.printStackTrace();
-		}
-    }
-    
-    @FXML
     private void handleEditarConta() {
         Conta contaSelecionada = tabelaContas.getSelectionModel().getSelectedItem();
         int indiceSelecionado = tabelaContas.getSelectionModel().getSelectedIndex();
@@ -120,7 +88,6 @@ public class ContaPaneController {
             if (okClicked) {
             	
             	// TODO: Chamar fachada
-            	fachada.atualizar(contaSelecionada);
             	
             	mostrarDetalhesConta(contaSelecionada);
 
