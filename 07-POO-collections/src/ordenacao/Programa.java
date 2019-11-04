@@ -3,7 +3,9 @@ package ordenacao;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Programa {
 
@@ -28,6 +30,16 @@ public class Programa {
 		Comparator comparadorContaPorSaldo = new ComparadorContaPorSaldo();
 		Collections.sort(lista, comparadorContaPorSaldo);
 		imprimirContas(lista);
+		
+		Map<String, Conta> mapContas = new HashMap(); 
+		
+		mapContas.put(c1.getNumero(), c1);
+		mapContas.put(c2.getNumero(), c2);
+		mapContas.put(c3.getNumero(), c3);
+		
+		Conta c = mapContas.get("456");
+		System.out.println("Conta 456: " + c);
+		
 	}
 
 	private static void imprimirContas(List<Conta> lista) {
