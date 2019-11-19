@@ -21,7 +21,7 @@ public class CSVReader {
 		
 		System.out.println("Top 3 municipios com mais crimes");
 		List<CityTotalCrimes> top3Municipios = crimes.top3CitiesWithMoreCrimes();
-		top3Municipios.forEach(e -> System.out.println(e.getMunicipio() + ": " + e.getTotalCrimes()));
+		top3Municipios.forEach(e -> System.out.println(e.getCity() + ": " + e.getTotalCrimes()));
 	}
 
 	private static RepositorioCrimes loadCrimesFromCSVFile(String nomeArquivo) {

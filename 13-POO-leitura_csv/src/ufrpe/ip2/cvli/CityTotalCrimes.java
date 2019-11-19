@@ -2,24 +2,24 @@ package ufrpe.ip2.cvli;
 
 public class CityTotalCrimes implements Comparable<CityTotalCrimes>{
 	
-	private String municipio;
+	private String city;
 	private Integer totalCrimes;
 	
-	public CityTotalCrimes(String municipio, int totalCrimes) {
-		this.municipio = municipio;
+	public CityTotalCrimes(String city, int totalCrimes) {
+		this.city = city;
 		this.totalCrimes = totalCrimes;
 	}
 	
 	
 
-	public String getMunicipio() {
-		return municipio;
+	public String getCity() {
+		return city;
 	}
 
 
 
-	public void setMunicipio(String municipio) {
-		this.municipio = municipio;
+	public void setCity(String city) {
+		this.city = city;
 	}
 
 
