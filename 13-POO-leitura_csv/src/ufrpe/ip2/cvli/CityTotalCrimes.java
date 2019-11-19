@@ -1,11 +1,11 @@
 package ufrpe.ip2.cvli;
 
-public class MunicipioTotalCrimes implements Comparable<MunicipioTotalCrimes>{
+public class CityTotalCrimes implements Comparable<CityTotalCrimes>{
 	
 	private String municipio;
 	private Integer totalCrimes;
 	
-	public MunicipioTotalCrimes(String municipio, int totalCrimes) {
+	public CityTotalCrimes(String municipio, int totalCrimes) {
 		this.municipio = municipio;
 		this.totalCrimes = totalCrimes;
 	}
@@ -37,7 +37,7 @@ public class MunicipioTotalCrimes implements Comparable<MunicipioTotalCrimes>{
 
 
 	@Override
-	public int compareTo(MunicipioTotalCrimes o) {
+	public int compareTo(CityTotalCrimes o) {
 		return this.totalCrimes.compareTo(o.totalCrimes);
 	}
 
