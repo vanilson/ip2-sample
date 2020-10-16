@@ -81,8 +81,10 @@ public class ContaPaneController {
     
     @FXML
     private void handleEditarConta() {
-        Conta contaSelecionada = tabelaContas.getSelectionModel().getSelectedItem();
+        
+    	Conta contaSelecionada = tabelaContas.getSelectionModel().getSelectedItem();
         int indiceSelecionado = tabelaContas.getSelectionModel().getSelectedIndex();
+        
         if (contaSelecionada != null) {
             boolean okClicked = bancoApp.abrirContaEditDialog(contaSelecionada);
             if (okClicked) {

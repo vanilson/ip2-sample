@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TableColumn?>
@@ -12,7 +15,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banco.gui.conta.controller.ContaPaneController">
+<AnchorPane prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banco.gui.conta.controller.ContaPaneController">
    <children>
       <SplitPane dividerPositions="0.40301003344481606" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -67,14 +70,14 @@
                         <Label fx:id="labelSaldo" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                      </children>
                   </GridPane>
-                  <ButtonBar layoutX="89.0" layoutY="231.0" prefHeight="25.0" prefWidth="175.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
-                    <buttons>
-                      <Button mnemonicParsing="false" text="Nova" />
-                        <Button mnemonicParsing="false" text="Editar" />
-                        <Button mnemonicParsing="false" text="Remover" />
-                    </buttons>
-                  </ButtonBar>
-               </children>
+                  <Pane layoutY="245.0" prefHeight="50.0" prefWidth="353.0">
+                     <children>
+                              <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Nova" />
+                              <Button layoutX="138.0" layoutY="18.0" mnemonicParsing="false" onAction="#handleEditarConta" text="Editar" />
+                              <Button layoutX="246.0" layoutY="18.0" mnemonicParsing="false" text="Remover" />
+                     </children>
+                  </Pane>
+                </children>
             </AnchorPane>
         </items>
       </SplitPane>
