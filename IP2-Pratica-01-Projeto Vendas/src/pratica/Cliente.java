@@ -44,6 +44,28 @@ public class Cliente {
 		this.dataNascimento = dataNascimento;
 	}
 	
+	public int calcularIdade() {
+		LocalDate dataHoje = LocalDate.now();
+		
+		if (this.dataNascimento == null) {
+			System.out.println("Data de Nascimento não informada!");
+			return -1;
+		}
+		
+		// Nao é a forma mais indicada para calcular a idade
+		return dataHoje.getYear() - this.dataNascimento.getYear();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 }

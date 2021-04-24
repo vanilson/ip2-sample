@@ -1,7 +1,5 @@
 package pratica;
 
-// https://app.diagrams.net/#G1RbuaBkZMSKEuf1JW-9A2TiqHgiiGm4RD
-// quadro: https://jamboard.google.com/u/0/d/1mR74sw1eR34dP_MnvYhYMkreh0v9uSw0q_njmxu7Rg0/viewer?usp=meet_whiteboard
 public class Produto {
 	
 	// ATRIBUTOS

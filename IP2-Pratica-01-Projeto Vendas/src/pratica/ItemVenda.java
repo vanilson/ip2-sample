@@ -1,6 +1,8 @@
 package pratica;
 
 public class ItemVenda {
+	
+	// ATRIBUTOS
 	private int quantidade;
 	private Produto produtoVendido;
 	
@@ -20,6 +22,18 @@ public class ItemVenda {
 	}
 	public void setProdutoVendido(Produto produtoVendido) {
 		this.produtoVendido = produtoVendido;
+	}
+
+	public double calcularTotal() {
+		return this.quantidade * this.produtoVendido.getPreco();
+	}
+	
+	@Override
+	public String toString() {
+		return "Qtd: " + this.getQuantidade() + 
+				" | Preço Unidade: " + this.getProdutoVendido().getPreco() + 
+				" | Total: " + this.calcularTotal() + 
+				" | Produto: " + this.getProdutoVendido().getNome();
 	}
 	
 	
