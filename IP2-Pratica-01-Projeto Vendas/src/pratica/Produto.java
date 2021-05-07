@@ -25,6 +25,7 @@ public class Produto {
 		
 	}
 	
+
 	// Métodos GET/SET
 	public int getCodigo() {
 		return codigo;
@@ -50,7 +51,6 @@ public class Produto {
 	public void setPreco(double preco) {
 		this.preco = preco;
 	}
-	
 	
 	
 }

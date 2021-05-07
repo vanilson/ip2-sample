@@ -32,17 +32,6 @@ public class RepositorioPessoa {
 		System.out.println("Pessoa nao encontrada | CPF: " + cpf);
 		return null;
 	}
-	
-	public int buscarPosicao(String cpf) {
-		
-		for (int i = 0; i < this.posicao; i++) {
-			if (this.pessoas[i].getCpf().equals(cpf)) {
-				return i;
-			}
-		}
-		
-		return -1;
-	}
 
 	public void remover(String cpf) {
 		int posRemover = this.buscarPosicao(cpf);
@@ -56,4 +45,16 @@ public class RepositorioPessoa {
 		this.posicao =- 1;
 		
 	}
+
+	private int buscarPosicao(String cpf) {
+		
+		for (int i = 0; i < this.posicao; i++) {
+			if (this.pessoas[i].getCpf().equals(cpf)) {
+				return i;
+			}
+		}
+		
+		return -1;
+	}
+
 }
